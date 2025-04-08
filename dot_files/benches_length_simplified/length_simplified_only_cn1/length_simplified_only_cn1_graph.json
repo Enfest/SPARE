@@ -1,0 +1,4231 @@
+{
+    "qubits": 26,
+    "slices_len": 19,
+    "slices": {
+        "0": {
+            "qubits": 26,
+            "node_0": {
+                "qubits": [
+                    0
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_1": {
+                "qubits": [
+                    1
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_2": {
+                "qubits": [
+                    2
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_3": {
+                "qubits": [
+                    3
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_4": {
+                "qubits": [
+                    4
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_5": {
+                "qubits": [
+                    5
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_6": {
+                "qubits": [
+                    6
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_7": {
+                "qubits": [
+                    7
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_8": {
+                "qubits": [
+                    8
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_9": {
+                "qubits": [
+                    9
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_10": {
+                "qubits": [
+                    10
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_11": {
+                "qubits": [
+                    11
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": true,
+                "sink": null
+            },
+            "node_12": {
+                "qubits": [
+                    12
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_13": {
+                "qubits": [
+                    13
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_14": {
+                "qubits": [
+                    14
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_15": {
+                "qubits": [
+                    15
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_16": {
+                "qubits": [
+                    16
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_17": {
+                "qubits": [
+                    17
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_18": {
+                "qubits": [
+                    18
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_19": {
+                "qubits": [
+                    19
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_20": {
+                "qubits": [
+                    20
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_21": {
+                "qubits": [
+                    21
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_22": {
+                "qubits": [
+                    22
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_23": {
+                "qubits": [
+                    23
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_24": {
+                "qubits": [
+                    24
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            },
+            "node_25": {
+                "qubits": [
+                    25
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": true,
+                "sink": null
+            }
+        },
+        "1": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": {
+                "qubits": [
+                    4,
+                    14
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_5": {
+                "qubits": [
+                    5,
+                    15
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_6": "",
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    4,
+                    14
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": {
+                "qubits": [
+                    5,
+                    15
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "2": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": "",
+            "node_7": {
+                "qubits": [
+                    14,
+                    7
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_8": "",
+            "node_9": {
+                "qubits": [
+                    15,
+                    9
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    14,
+                    7
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": {
+                "qubits": [
+                    15,
+                    9
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "3": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": "",
+            "node_7": {
+                "qubits": [
+                    7,
+                    9,
+                    16
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_8": "",
+            "node_9": {
+                "qubits": [
+                    7,
+                    9,
+                    16
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": "",
+            "node_15": "",
+            "node_16": {
+                "qubits": [
+                    7,
+                    9,
+                    16
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "4": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": "",
+            "node_7": {
+                "qubits": [
+                    14,
+                    7
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_8": "",
+            "node_9": {
+                "qubits": [
+                    15,
+                    9
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    14,
+                    7
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": {
+                "qubits": [
+                    15,
+                    9
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "5": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": {
+                "qubits": [
+                    4,
+                    14
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_5": {
+                "qubits": [
+                    5,
+                    15
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_6": "",
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    4,
+                    14
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": {
+                "qubits": [
+                    5,
+                    15
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "6": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": {
+                "qubits": [
+                    16,
+                    14,
+                    6
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    16,
+                    14,
+                    6
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": "",
+            "node_16": {
+                "qubits": [
+                    16,
+                    14,
+                    6
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "7": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": {
+                "qubits": [
+                    16,
+                    6,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    16,
+                    6,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": "",
+            "node_16": {
+                "qubits": [
+                    16,
+                    6,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "8": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": {
+                "qubits": [
+                    16,
+                    14,
+                    6
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    16,
+                    14,
+                    6
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": "",
+            "node_16": {
+                "qubits": [
+                    16,
+                    14,
+                    6
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "9": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": "",
+            "node_7": "",
+            "node_8": {
+                "qubits": [
+                    16,
+                    15,
+                    8
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": "",
+            "node_15": {
+                "qubits": [
+                    16,
+                    15,
+                    8
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_16": {
+                "qubits": [
+                    16,
+                    15,
+                    8
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "10": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": {
+                "qubits": [
+                    5,
+                    25
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_6": "",
+            "node_7": "",
+            "node_8": {
+                "qubits": [
+                    16,
+                    8,
+                    15
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": "",
+            "node_15": {
+                "qubits": [
+                    16,
+                    8,
+                    15
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_16": {
+                "qubits": [
+                    16,
+                    8,
+                    15
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": {
+                "qubits": [
+                    5,
+                    25
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            }
+        },
+        "11": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": "",
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    16,
+                    14
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": "",
+            "node_16": {
+                "qubits": [
+                    16,
+                    14
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "12": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": {
+                "qubits": [
+                    14,
+                    6,
+                    22
+                ],
+                "controls": [
+                    0,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    14,
+                    6,
+                    22
+                ],
+                "controls": [
+                    0,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": "",
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": {
+                "qubits": [
+                    14,
+                    6,
+                    22
+                ],
+                "controls": [
+                    0,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "13": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": {
+                "qubits": [
+                    4,
+                    24
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_5": "",
+            "node_6": "",
+            "node_7": "",
+            "node_8": {
+                "qubits": [
+                    14,
+                    8,
+                    23
+                ],
+                "controls": [
+                    0,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    14,
+                    8,
+                    23
+                ],
+                "controls": [
+                    0,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": "",
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": {
+                "qubits": [
+                    14,
+                    8,
+                    23
+                ],
+                "controls": [
+                    0,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_24": {
+                "qubits": [
+                    4,
+                    24
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_25": ""
+        },
+        "14": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": "",
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": {
+                "qubits": [
+                    24,
+                    10
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_11": {
+                "qubits": [
+                    25,
+                    11
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    16,
+                    14
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": "",
+            "node_16": {
+                "qubits": [
+                    16,
+                    14
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": {
+                "qubits": [
+                    24,
+                    10
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_25": {
+                "qubits": [
+                    25,
+                    11
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            }
+        },
+        "15": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": "",
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": {
+                "qubits": [
+                    10,
+                    11,
+                    16
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_11": {
+                "qubits": [
+                    10,
+                    11,
+                    16
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_12": "",
+            "node_13": "",
+            "node_14": "",
+            "node_15": "",
+            "node_16": {
+                "qubits": [
+                    10,
+                    11,
+                    16
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": ""
+        },
+        "16": {
+            "qubits": 26,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": "",
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": {
+                "qubits": [
+                    24,
+                    10
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_11": {
+                "qubits": [
+                    25,
+                    11
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_12": "",
+            "node_13": "",
+            "node_14": "",
+            "node_15": "",
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": {
+                "qubits": [
+                    24,
+                    10
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_25": {
+                "qubits": [
+                    25,
+                    11
+                ],
+                "controls": [
+                    0
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            }
+        },
+        "17": {
+            "qubits": 26,
+            "node_0": {
+                "qubits": [
+                    0
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_1": {
+                "qubits": [
+                    1
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_2": {
+                "qubits": [
+                    2
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_3": {
+                "qubits": [
+                    3
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_4": {
+                "qubits": [
+                    4,
+                    24
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_5": {
+                "qubits": [
+                    5,
+                    25
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_6": "",
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": "",
+            "node_15": "",
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": {
+                "qubits": [
+                    4,
+                    24
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_25": {
+                "qubits": [
+                    5,
+                    25
+                ],
+                "controls": [
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            }
+        },
+        "18": {
+            "qubits": 26,
+            "node_0": {
+                "qubits": [
+                    0
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_1": {
+                "qubits": [
+                    1
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_2": {
+                "qubits": [
+                    2
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_3": {
+                "qubits": [
+                    3
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_4": {
+                "qubits": [
+                    4
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_5": {
+                "qubits": [
+                    5
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_6": {
+                "qubits": [
+                    6
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_7": {
+                "qubits": [
+                    7
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_8": {
+                "qubits": [
+                    8
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_9": {
+                "qubits": [
+                    9
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_10": {
+                "qubits": [
+                    10
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_11": {
+                "qubits": [
+                    11
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": false,
+                "root": false,
+                "sink": true
+            },
+            "node_12": {
+                "qubits": [
+                    12
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_13": {
+                "qubits": [
+                    13
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_14": {
+                "qubits": [
+                    14
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_15": {
+                "qubits": [
+                    15
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_16": {
+                "qubits": [
+                    16
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_17": {
+                "qubits": [
+                    17
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_18": {
+                "qubits": [
+                    18
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_19": {
+                "qubits": [
+                    19
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_20": {
+                "qubits": [
+                    20
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_21": {
+                "qubits": [
+                    21
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_22": {
+                "qubits": [
+                    22
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_23": {
+                "qubits": [
+                    23
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_24": {
+                "qubits": [
+                    24
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            },
+            "node_25": {
+                "qubits": [
+                    25
+                ],
+                "controls": [],
+                "matrix": {
+                    "real": "",
+                    "imaginary": ""
+                },
+                "status_rule_3": [],
+                "ancilla": true,
+                "root": false,
+                "sink": true
+            }
+        }
+    },
+    "slice_collection": {
+        "edges_num": 18,
+        "0": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis0",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis0",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis0",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "1": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis0",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis0",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "2": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis0",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis0",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "3": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis0",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "4": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis0",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "5": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis0",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "6": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "7": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "8": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis0",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "9": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        },
+        "10": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis01"
+        },
+        "11": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis01"
+        },
+        "12": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis01"
+        },
+        "13": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis01",
+            "status_25": "EdgeType.Basis01"
+        },
+        "14": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis0",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis01",
+            "status_25": "EdgeType.Basis01"
+        },
+        "15": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis0",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis0",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis01",
+            "status_25": "EdgeType.Basis01"
+        },
+        "16": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis0",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis0",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis01",
+            "status_25": "EdgeType.Basis01"
+        },
+        "17": {
+            "qubits": 26,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis0",
+            "status_13": "EdgeType.Basis0",
+            "status_14": "EdgeType.Basis0",
+            "status_15": "EdgeType.Basis0",
+            "status_16": "EdgeType.Basis0",
+            "status_17": "EdgeType.Basis0",
+            "status_18": "EdgeType.Basis0",
+            "status_19": "EdgeType.Basis0",
+            "status_20": "EdgeType.Basis0",
+            "status_21": "EdgeType.Basis0",
+            "status_22": "EdgeType.Basis0",
+            "status_23": "EdgeType.Basis0",
+            "status_24": "EdgeType.Basis0",
+            "status_25": "EdgeType.Basis0"
+        }
+    }
+}
