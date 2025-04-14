@@ -1,20 +1,14 @@
 import numpy as np
-from scipy.stats import unitary_group
-from quantumcircuitbenchmarks.quantumcircuitbenchmarks.cirq import *
 import cirq
 from src.toffoli import *
 from src.controlled_gate_impl import *
 import numpy as np
 import matplotlib.pyplot as plt
-from PIL import Image
-from rewriter.utils.check_subspace_equality import return_qubit_circuit
-from src.create_qutrit_circ import *
 import random
-from ripl.decomp.util.circuit_utils import save_circuit
-from replacement_lib.replace_qubit_circ import replace_qubit_circuit
+from Spare.rewriter.utils.check_subspace_equality import return_qubit_circuit
+from Spare.replacement_lib.replace_qubit_circ import replace_qubit_circuit
 from benchmarks.get_square_benchmarks import get_simple_circuits, get_errorcorr_circuits, get_twooffive_circuits, get_sixsim_circuits, get_rd53_circuits, get_adder_circuits
-from src.dotConvertor import dotConvertor
-# from test_qubit_decomposition import run_qubit_sim
+from Spare.replacement_lib.src.dotConvertor import dotConvertor
 
 def check_if_block_diagonal(matrix, D=3):
     assert matrix.shape[0] % 3 == 0
@@ -545,11 +539,6 @@ def return_cuccaro_4(size=4, dimension=3, return_base=False, return_qubit=False)
         return dummy_circ2, cirq.LineQid.range(size, dimension=2)
             
     mat2 = get_circuit_unitaries_2(dummy_circ, dim=2)
-    print("MATRIX IS THE FOLLOWING FOR Cucarro 4")
-    for i in range(mat2.shape[0]):
-        print(mat2[i, :])
-    # plt.imshow(np.asarray(mat2, dtype=np.float), cmap='viridis')
-    # plt.savefig("ccc4.png")
     mat = get_circuit_unitaries(dummy_circ, dim=2)
     print(dummy_circ)
     new_matrix = attain_symmetry(mat.copy()) # mat.copy() # 
@@ -773,6 +762,3 @@ def return_decomp(size=8, dimension=3, return_base=False):
     c2 = cirq.Circuit()
     c2.append(cirq.MatrixGate(matrix_new, qid_shape=[3]*size).on(* qubits))
     return c2, qubits
-
-# def __name__ == "__main__":
-

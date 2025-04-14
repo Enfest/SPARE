@@ -1,0 +1,2 @@
+[console_scripts]
+compile-rewrite = rewriter.compile_rewrite_graphs:main

@@ -1,0 +1,21 @@
+{
+    "random_compilation_itr_0": {
+        "estimated_depth": [
+            189
+        ],
+        "seeds": 844421,
+        "rewrites_applied": []
+    },
+    "random_compilation_itr_final": {
+        "estimated_depth": 189,
+        "seeds": 844421,
+        "rewrites_applied": [],
+        "optimizing_time": 4.2867865562438965,
+        "lowering_time": 0.1166074275970459,
+        "depth": 101,
+        "2_q_gates": 76,
+        "1_q_gates": 100,
+        "fidelity": {},
+        "total_time": 4.40342116355896
+    }
+}
