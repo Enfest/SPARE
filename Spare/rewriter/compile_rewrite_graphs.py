@@ -129,7 +129,12 @@ def compile_basic(name="temp", manual_lifting=True, if_base=False, json_data=Non
     gateslices.prune_null_slices()
     gateslices.optimizer_pass(debug=False)
     all_passes = [
-      rewritePassManage([passPair("get_all_bookend_broadcasts", "modify_middle_bookends", lambda lst: lst[0] if lst else None, if_spec=True, times=25)]),
+      rewritePassManage([passPair("get_all_bookend_broadcasts", "modify_middle_bookends", lambda lst: lst[0] if lst else None, if_spec=True, times=10)]),
+      rewritePassManage([passPair(None, "gateslices_simplify", None, if_spec=False, times=2)]),
+      rewritePassManage([passPair("get_all_broadcastable_gates", "apply_rule_broadcasts", lambda lst: lst[0] if lst else None, if_spec=False, times=1), 
+                    passPair(None, "optimizer_pass", lambda lst: lst[0] if lst else None, if_spec=False, times=1), 
+                  ], if_spec=True, times=3),
+      rewritePassManage([passPair("get_all_bookend_broadcasts", "modify_middle_bookends", lambda lst: lst[0] if lst else None, if_spec=True, times=10)]),
       rewritePassManage([passPair(None, "gateslices_simplify", None, if_spec=False, times=2)])
     ]
     gateslices = rewritePassesManager(all_passes).applyAllPasses(gateslices)
@@ -235,6 +240,16 @@ def count_circuits(circ_names):
   matching_files = [x for _, x in sorted(zip(indexes, matching_files))]
   return matching_files
 
+def compile_compare(name, manual_lifting, lower_to_qubit_en=False, dimension=3):
+  info = compile_basic(name=name, manual_lifting=manual_lifting, if_base=True, if_verify=False, dimension=dimension)
+  if lower_to_qubit_en:
+    info.unroll_multicontrolled_gates()
+    info.convert_gateslices()
+    result = info.build_circuit(dimension=2)
+    return result[0], result[1]
+  circ2, qubits = info.build_circuit(if_final_circ=not "qubit" in compile_mode)
+  return circ2, qubits
+
 def compile(args, data):
   if "optimized" in args.compile_mode:
     # Preprocessing for nam circuits
@@ -253,7 +268,7 @@ def compile(args, data):
                                                                 compile_mode=args.compile_mode, dimension=args.dimension)
       else:
         circ_toffoli_greedy, qubits, choices = compile_random("loaded", name=args.test_name, manual_lifting=args.use_lifted,
-                                                                seed=seed, json_data=data, itr=i, if_verify=args.verify_en and ifverify,
+                                                                seed=seed, json_data=data, itr=i, if_verify=args.verify_en,
                                                                 compile_mode=args.compile_mode, dimension=args.dimension) 
       estimate_value = depth_estimater(circ_toffoli_greedy, qubits, mode=args.compile_mode)
       print("ESTIMATED DEPTH VALUE ", estimate_value)
@@ -273,7 +288,7 @@ def compile(args, data):
     else:
         min_seed = int(100000 * random.random())
     circ_toffoli_optimized, qubits, choices = compile_random("loaded", args.test_name, args.use_lifted, seed=min_seed, json_data=data,
-                                                              itr="final", if_verify=args.verify_en and ifverify, compile_mode=args.compile_mode,
+                                                              itr="final", if_verify=args.verify_en, compile_mode=args.compile_mode,
                                                               lower_to_qubit_en="qubit" in args.compile_mode, dimension=args.dimension)
     data["random_compilation_itr_final"] = {
         "estimated_depth": min(depth_arr),
@@ -287,7 +302,7 @@ def compile(args, data):
     assert args.run_sim == False
     post_compile_depth, two_q_gc, one_q_gc, simulation_results_dir = post_rewrite_compile(circ_toffoli_optimized, qubits,
                                                                                           run_sim=args.run_sim and "nam" not in args.test_name,
-                                                                                          if_verify=args.verify_en and ifverify, compile_mode=args.compile_mode)
+                                                                                          if_verify=args.verify_en, compile_mode=args.compile_mode)
     lowering_time = time.time()
     print("Final Depth Check ", post_compile_depth)
     print("OPTIMIZING ", end_time - start_time, "lower_time ", "full time ", lowering_time - end_time, end_time-start_total)
@@ -310,6 +325,27 @@ def compile(args, data):
       _, _, res_arr = run_qubit_decomposition(args.test_name.replace("_graph", "_"), True)
     elif args.qubit_sim:
       raise Exception("The Qubit Simulation Has Not Run")
+  elif "bench" in args.compile_mode:
+      start_time = time.time()
+      lowering_time = time.time()
+      circ, qubits = compile_compare(args.test_name, args.use_lifted,
+                                     lower_to_qubit_en="qubit" in args.compile_mode, dimension=2)
+      print(qubits)
+      post_compile_depth, two_q_gc, one_q_gc, simulation_results_dir = post_rewrite_compile(circ, qubits,
+                                                                                            run_sim=args.run_sim,
+                                                                                            compile_mode=args.compile_mode)
+      data["manual_rewrites"] = {
+          "estimated_depth": "",
+          "seeds": "",
+          "rewrites_applied": None,
+          "optimizing_time": 0,
+          "lowering_time": lowering_time - start_time,
+          "depth": post_compile_depth,
+          "2_q_gates": two_q_gc,
+          "1_q_gates": one_q_gc,
+          "fidelity": simulation_results_dir
+      }
+      print("Final Depth Check ", post_compile_depth)
   else:
     if args.test_name != "toffoli_5_lifted":
       raise Exception("This test is not supported yet for manual optimization")
@@ -333,6 +369,7 @@ if __name__ == "__main__":
   parser.add_argument("--run-sim", default=False, action='store_true')
   parser.add_argument("--verify-en", default=False, action='store_true')
   parser.add_argument("--loaded", default=False, action="store_true")
+  parser.add_argument("--no-rccx-lowering", default=False, action="store_true")
   args = parser.parse_args()
   if os.path.exists(args.json_name):
     with open(args.json_name, 'r') as json_file:

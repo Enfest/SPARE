@@ -42,8 +42,8 @@ class RewriteEngine(GateSliceCollection):
         
     def deepcopy(self):
         '''Save and prepare a deepcopy of a slicecollection object'''
-        self.serialize("temp_new1.json")
-        return RewriteEngine.read_in("temp_new1.json", self.dimension)
+        self.serialize("temp_files/temp_new1.json")
+        return RewriteEngine.read_in("temp_files/temp_new1.json", self.dimension)
 
     def slice_collection_serialize(self):
         data = collections.defaultdict()
@@ -200,7 +200,7 @@ class RewriteEngine(GateSliceCollection):
             return None
         return result_arr
 
-    def get_all_swapdel_sites(self, debug=False):
+    def get_all_swapdel_sites(self, debug=False, get_first=False):
         resulting_matches = []
         position_tracker = []
         all_swaps = []
@@ -233,6 +233,8 @@ class RewriteEngine(GateSliceCollection):
                             print(f"\t{g1.get_qubits()}, Gate Match, {result}, {gates[1].get_qubits()}, {positions}, {gate_added}")
                         if not gate_added:
                             resulting_matches.append({"result":result, "targets":gates, "orig":g1, "positions":result[2]})
+                            if get_first:
+                                return resulting_matches
                             for p in positions:
                                 if p not in position_tracker:
                                     position_tracker.append(p)
@@ -294,24 +296,26 @@ class RewriteEngine(GateSliceCollection):
 
     def get_all_broadcastable_gates(self):
         '''Find all gates that do not have any possible mergeable gates'''
-        all_gates = []
-        gate_pairs = []
-        gates_of_interest = []
-        bookend_pos = []
+        gates_in_pairs = set()
+        all_gates, gate_pairs, gates_of_interest, bookend_pos = [], [], [], []
         for i, s in enumerate(self.slice_collection):
             for g in s.get_all_nodes():
                 if not g.get_node_type().is_gateset() and g.get_node_type().is_gate() \
                     and g not in all_gates and g not in gate_pairs:
                   result, gates, positions = self.parse_for_matching_gates(g.deepcopy(), i, forward_direction=True,swap_through_gates=True, invalid_swap=True)
                   if result[0]:
-                    gate_pairs.append(g)
-                    gate_pairs.append(gates[1])
+                    gates_in_pairs.add(g)
+                    gates_in_pairs.add(gates[1])
+                    gate_pairs.append((g, gates[1]))
                     bookend_pos.append((self.find_gate(g)[1], self.find_gate(gates[1])[1]))
                     gates_of_interest.append(g)
                 if not g.get_node_type().is_gateset() and g.get_node_type().is_gate():
                   all_gates.append(g)
-        gates_not_in_pairs = [x for x in all_gates if x not in gate_pairs]
+        gates_not_in_pairs = [x for x in all_gates if x not in gates_in_pairs]
         gates_not_in_pairs = [x for x in gates_not_in_pairs if len(x.get_qubits()) != self.num_qubits]
+        # print("all gates not in pairs")
+        # for g in gates_not_in_pairs:
+        #     print(g)
         prune_list = []
         bookend_start_gates = []
         for g in gates_not_in_pairs:
@@ -327,6 +331,18 @@ class RewriteEngine(GateSliceCollection):
         for g in prune_list:
             idx = gates_not_in_pairs.index(g)
             gates_not_in_pairs.pop(idx)
+        prune_list = []
+        for i in range(len(gates_not_in_pairs)):
+            found = False
+            for cs in bookend_start_gates[i]:
+                if cs.get_target() in gates_not_in_pairs[i].get_control():
+                    found = True
+            if not found:
+                prune_list.append(gates_not_in_pairs[i])
+        for g in prune_list:
+            idx = gates_not_in_pairs.index(g)
+            gates_not_in_pairs.pop(idx)
+            bookend_start_gates.pop(idx)
         for g in gates_not_in_pairs:
             assert g.get_node_type().is_gate()
         assert len(gates_not_in_pairs) == len(bookend_start_gates)

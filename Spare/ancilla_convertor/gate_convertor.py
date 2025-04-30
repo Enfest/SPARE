@@ -1,6 +1,7 @@
 import cirq 
 import numpy as np
 from qiskit import QuantumCircuit, transpile
+from qiskit.circuit import Gate
 from qiskit_aer import Aer
 # from qiskit import Aer, execute
 # from qiskit.quantum_info.synthesis import two_qubit_decompose
@@ -77,30 +78,43 @@ def circuit_gen(matrix, original):
     trans_qc = transpile(qc, optimization_level=3, basis_gates=['cx', 'x', 'y', 'z', 'h', 's', 't', 'u']) # , decomposition=[two_qubit_decompose])
     return trans_qc
 
-# Function to get the unitary matrix of a gate
-def get_gate_unitary(gate, qubits):
-    gatecopy = gate.copy()
-    qc = QuantumCircuit(qubits)
-    gatecopy.qubits = qc.qubits
-    qc.append(gatecopy, qubits)
+def get_gate_unitary(gate_like, num_qubits=None):
+    if hasattr(gate_like, 'operation') and hasattr(gate_like, 'qubits'):
+        instr = gate_like.operation
+        num_q = len(gate_like.qubits)
+    else:
+        instr = gate_like
+        if num_qubits is None:
+            num_q = instr.num_qubits  # should be safe for Gate or Instruction
+        else:
+            num_q = num_qubits
+    qc = QuantumCircuit(num_q)
+    qc.append(instr, qc.qubits[:num_q])
     simulator = Aer.get_backend('unitary_simulator')
-    compiled_circuit = transpile(qc, simulator)    
-    result = simulator.run(compiled_circuit).result()
-    # result = execute(compiled_circuit, simulator).result()
-    return np.array(result.get_unitary().data)
+    compiled = transpile(qc, simulator)
+    result = simulator.run(compiled).result()
+    return np.array(result.get_unitary(qc))
 
 def unroll_controls(gate, new_qubits):
     for i, c in enumerate(gate.get_control()):
         if gate.get_control_value_for_qubit(c) == 2:
             gate.replace_qubit(c, new_qubits[c])
             gate.set_control_value_for_qubit(new_qubits[c], 1)
-    # print("check the status of the conversion ", gate)
     return gate
+
+def reappend_on_new_qubits(inst, new_qubits):
+    """Append an instruction on new qubits."""
+    if hasattr(inst, 'operation'):
+        instr = inst.operation  # CircuitInstruction
+    else:
+        instr = inst  # already a Gate or Instruction
+    qc = QuantumCircuit(max(q.index for q in new_qubits) + 1)
+    qc.append(instr, new_qubits)
+    return qc
 
 def gate_convertor(orig_gate, new_qubits, gatetypeinfo, ancilla_data):
     if orig_gate.get_gate_type().is_binary():
         new_matrix = orig_gate.get_matrix()[:2, :2]
-        # print("Check status ", orig_gate.get_target(), ancilla_data[orig_gate.get_target()])
         if ancilla_data[orig_gate.get_target()] and len(orig_gate.get_control()) > 1:
             if np.allclose(orig_gate.get_matrix()[:2, :2], np.asarray([[0, 1], [1, 0]])):
                 new_matrix = np.asarray([[0, -1], [1, 0]])
@@ -112,13 +126,10 @@ def gate_convertor(orig_gate, new_qubits, gatetypeinfo, ancilla_data):
             orig_gate_copy.set_matrix(new_matrix, assert_disabled=True)  # orig_gate_copy.get_matrix()
         result = unroll_controls(orig_gate_copy, new_qubits)
         return result
-    # print("target qubits could be ", new_qubits, orig_gate.get_target(), new_qubits[orig_gate.get_target()])
+    
     new_target = new_qubits[orig_gate.get_target()]
     targets = [orig_gate.get_target(), new_target]
-    circuit, is_rccx = circuit_gen(matrix_convert(gatetypeinfo.normalize_matrix(orig_gate.get_matrix()), gatetypeinfo, debug=False), original=orig_gate.get_matrix())
-    
-    # print("Check status ", new_target, orig_gate.get_target(), ancilla_data[orig_gate.get_target()], new_target < len(ancilla_data) and ancilla_data[new_target])
-    
+    circuit, is_rccx = circuit_gen(matrix_convert(gatetypeinfo.normalize_matrix(orig_gate.get_matrix()), gatetypeinfo, debug=False), original=orig_gate.get_matrix())    
     is_rccx = is_rccx or (new_target < len(ancilla_data) and ancilla_data[new_target])
     gates = []
     new_gate = orig_gate.deepcopy()
@@ -134,23 +145,16 @@ def gate_convertor(orig_gate, new_qubits, gatetypeinfo, ancilla_data):
         if len(gate.qubits) == 1:
             if np.allclose(get_gate_unitary(gate, 1), np.eye(2)):
                 continue
-            gate.qubits = (gate.qubits[0], 0)
             new_gate.set_matrix(get_gate_unitary(gate, 1), assert_disabled=True)
-            # Ancilla target
-            new_gate.set_target(targets[gate.qubits[0].index])
+            new_gate.set_target(targets[gate.qubits[0]._index])
         elif gate.operation.name == "cx" and (not is_rccx):
             new_gate.set_matrix(np.asarray([[0, 1],[1, 0]], dtype=np.complex128), assert_disabled=True)
-            # print(gate.qubits[0], gate.qubits[1], gate.qubits[0].index)
-            # q0.register.index(q0)
             new_gate.update_qubit_targets(control=targets[circuit.find_bit(gate.qubits[0]).index],
                                           target=targets[circuit.find_bit(gate.qubits[1]).index])
-            # print("1 ", new_gate)
-        elif gate.operation.name == "cx" and (is_rccx):          
+        elif gate.operation.name == "cx" and (is_rccx):  
             new_gate.set_matrix(np.asarray([[0, -1],[1, 0]], dtype=np.complex128), assert_disabled=True)
-            # print(gate.qubits[0], gate.qubits[1])
             new_gate.update_qubit_targets(control=targets[circuit.find_bit(gate.qubits[0]).index],
                                           target=targets[circuit.find_bit(gate.qubits[1]).index])     
-            # print("2 ", new_gate)
         else:
             assert False
         gates.append(new_gate)

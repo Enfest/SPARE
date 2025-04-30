@@ -9,9 +9,10 @@ from rewriter.utils.edge_types import EdgeType
 from src.toffoli import *
 from rewriter.utils.graph_utils import check_matrix_phase
 
+
 def generate_ancilla_maps(gateslices):
     '''
-        We use a less efficient circuit mapper implementation maybe we should use a stack for the next version
+        We use a efficient circuit mapper implementation
     '''
     slice_max, edge_max = gateslices.return_iterator()
     gateslices.slice_edge_collection.update_all_mappings(debug=False)
@@ -19,6 +20,7 @@ def generate_ancilla_maps(gateslices):
     ancilla_maps = [0] * len(gateslices.get_slice(0).get_qubits())
     currently_set = [False] * len(gateslices.get_slice(0).get_qubits())
     next_ancilla = len(ancilla_maps)
+    available_for_reuse = []
     for i in range(1, slice_max-1):
         pos = []
         ctrl2s = []
@@ -33,27 +35,37 @@ def generate_ancilla_maps(gateslices):
         
         for q in gateslices.get_slice(i).get_qubits():
             if ancilla_maps[q] != 0 and currently_set[q] and gateslices.slice_edge_collection.get_edge_slice(i).get_wire_status(q) == EdgeType.Basis01:
-                next_ancilla -= 1
+                available_for_reuse.append(ancilla_maps[q])
                 currently_set[q] = False
+                if ancilla_maps[q] == next_ancilla:
+                    next_ancilla -= 1
+        
+        for q in gateslices.get_slice(i).get_qubits():
+            if ancilla_maps[q] != 0 and not currently_set[q] and gateslices.slice_edge_collection.get_edge_slice(i).get_wire_status(q) == EdgeType.Basis012:
+                if ancilla_maps[q] in available_for_reuse:
+                    available_for_reuse.remove(ancilla_maps[q])
+                else:
+                    ancilla_maps[q] = next_ancilla
+                    next_ancilla += 1
+                currently_set[q] = True        
         
         for q in gateslices.get_slice(i).get_qubits():
             if ancilla_maps[q] == 0 and gateslices.slice_edge_collection.get_edge_slice(i).get_wire_status(q) == EdgeType.Basis012:
-                ancilla_maps[q] = next_ancilla
-                next_ancilla += 1
-                currently_set[q] = True
-            elif ancilla_maps[q] != 0 and not currently_set[q] and gateslices.slice_edge_collection.get_edge_slice(i).get_wire_status(q) == EdgeType.Basis012:
-                if next_ancilla < ancilla_maps[q]:
-                    currently_set[q] = True                
-                else:    
+                if len(available_for_reuse) > 0:
+                    ancilla = available_for_reuse.pop(0)
+                    ancilla_maps[q] = ancilla
+                else:
                     ancilla_maps[q] = next_ancilla
                     next_ancilla += 1
-                    currently_set[q] = True                
-                    
+                currently_set[q] = True
+                        
         ancilla_pos = [(i, x) for i, x in enumerate(ancilla_maps) if i in pos]
         if len(pos) > 1:
             for i, q_a_tup in enumerate(ancilla_pos):
                 if i > 0:
                     if q_a_tup[1] in [x[1] for x in ancilla_pos[:i]]:
+                        print("Found mismatch")
+                        assert False
                         ancilla_maps[q_a_tup[0]] = next_ancilla
                         ancilla_pos[i] = (q_a_tup[0], next_ancilla)
                         next_ancilla += 1
@@ -66,6 +78,7 @@ def slice_convertor(slice, ancilla_maps, edge_data, slice_idx, ancilla_data):
                 print("gate has multiple same qubit ", x)
                 print(gates)
                 assert False    
+    
     new_slices = []
     new_qubits = max(0, max(ancilla_maps) - len(slice.node_map) + 1)
     new_node_map = copy.deepcopy(slice.node_map)
@@ -77,6 +90,7 @@ def slice_convertor(slice, ancilla_maps, edge_data, slice_idx, ancilla_data):
     else:
         new_node_map.extend([None]*max(0, new_qubits))
     assert isinstance(new_node_map, list)
+    
     for i, gates in enumerate(slice.node_map):
         if gates is not None and gates.get_node_type().is_gate():
             gatetype_info = edge_data.node_works_on_qutrit(slice_idx, gates)[1]
@@ -104,6 +118,7 @@ def slice_convertor(slice, ancilla_maps, edge_data, slice_idx, ancilla_data):
             check_gate(new_gate)
             for q in new_gate.get_qubits():
                 new_node_map[q] = new_gate
+    
     slice.node_map = new_node_map
     slice.dimension = 2
     return [slice, *new_slices]
@@ -115,7 +130,6 @@ def unroll_multicontrolled_slice(self, slices, sliceid=0, edge_slice_copy=None, 
         Maybe confirm if these gates can use 2 states in the first lapce? Maybe they dont exist with the new commute and delete operation (it uses rule 2 all the time)
     '''
     def unroll_a_gate(node, new_slices, flag=False, mk_new_slice=False, use_num_controls=None):        
-        # print(node, "flag is ", flag)
         if len(node.get_qubits()) < 3:
             if mk_new_slice:
                 new_slices.append(GateSlice(qubits=len(slices.node_map), gate=node, dimension=3, force_convert=True))
@@ -125,7 +139,6 @@ def unroll_multicontrolled_slice(self, slices, sliceid=0, edge_slice_copy=None, 
                 new_slices.append(GateSlice(qubits=len(slices.node_map), gate=node, dimension=3, force_convert=True))
                 return new_slices
         else:
-            # print(node)
             num_controls = len(node.get_control())
             controls_used = {}
             gates_list = []

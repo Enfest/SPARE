@@ -40,6 +40,7 @@ class passPair:
         counter = 0
         if isinstance(self._times, int):
           for t in range(self._times):
+            # print(f"\tpass pair number {t} ", end="")
             circuit_obj, speculative_history, _ = self._applyPassSpeculatively(circuit_obj, speculative_history)
             counter += 1
         else:
@@ -85,6 +86,7 @@ class passPair:
         new_estimate_value = depth_estimater(circuit_copy.build_circuit(breakdown="vvv")[0], circuit_obj.build_circuit(breakdown="vvv")[1], mode="None")
         old2gates = toffoli_estimator(circuit_obj.build_circuit(breakdown="vvv")[0], circuit_obj.build_circuit(breakdown="vvv")[1], mode="None")
         new2gates = toffoli_estimator(circuit_copy.build_circuit(breakdown="vvv")[0], circuit_obj.build_circuit(breakdown="vvv")[1], mode="None")
+        # print(" values are ", orig_estimate_value, new_estimate_value)
         if new_estimate_value < orig_estimate_value or new2gates < old2gates:
             return circuit_copy, [], True
         else:
@@ -93,7 +95,6 @@ class passPair:
 
 class rewritePassManage:
     def __init__(self, passesLists, if_spec=False, times=1):
-        # self._target = target
         assert isinstance(passesLists, list)
         self._pass_list = passesLists
         self._times = times
@@ -127,6 +128,7 @@ class rewritePassManage:
     def applyPassSpeculatively(self, circuit_obj):
         if isinstance(self._times, int):
           for t in range(self._times):
+            # print(f"\tpass number {t} ", end="")
             circuit_obj, _ = self._applyPassSpeculatively(circuit_obj)
         else:
             raise NotImplementedError
@@ -142,6 +144,7 @@ class rewritePassManage:
         new_estimate_value = depth_estimater(circuit_copy.build_circuit(breakdown="vvv")[0], circuit_obj.build_circuit(breakdown="vvv")[1], mode="None")
         old2gates = toffoli_estimator(circuit_obj.build_circuit(breakdown="vvv")[0], circuit_obj.build_circuit(breakdown="vvv")[1], mode="None")
         new2gates = toffoli_estimator(circuit_copy.build_circuit(breakdown="vvv")[0], circuit_obj.build_circuit(breakdown="vvv")[1], mode="None")
+        # print(" values are ", orig_estimate_value, new_estimate_value)
         if new_estimate_value < orig_estimate_value or new2gates < old2gates:
             return circuit_copy, True
         else:
@@ -158,5 +161,6 @@ class rewritePassesManager:
     
     def applyAllPasses(self, circuit_obj):
         for p in self._all_pass_List:
+            # print("current pass ", p)
             circuit_obj = p.applyPass(circuit_obj)
         return circuit_obj

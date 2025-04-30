@@ -172,7 +172,9 @@ def apply_rule_gate_merge(self, target):
 def apply_swapdel_ops(self, target, debug=False):
     '''This operation should return the swapped and modified gate maybe we remove the return gateslice case'''
     result, targets, orig_gate, gateids = (target["result"], target["targets"], target["orig"], target["positions"])
-    positions = (self.find_gate(target["orig"])[1], self.find_gate(target["targets"][1])[1])
+    a = self.find_gate(target["orig"])[1]
+    b = self.find_gate(target["targets"][1])[1]
+    positions = (a, b)
     assert result[0] and result[1][0] == "GateMatch"
     start_gate = targets[0]
     end_gate = targets[1]
@@ -203,24 +205,21 @@ def apply_rule_broadcasts(self, target):
     for book_pair0 in target_bookends:
         qubits_not_controlled = list(set(qubits_not_controlled).union(set(book_pair0.get_qubits())))
     qubits_not_controlled = sorted(list(set(qubits_not_controlled) - set(target.get_qubits())))
-    # assert False
     assert isinstance(qubits_not_controlled, list)
-    # print("qubits not controlled - ", qubits_not_controlled)
-    # qubits_not_controlled = list(range(self.slice_collection[0].qubits))
+    if len(qubits_not_controlled) > 4:
+        return False
     gateList = target.broadcastQubits(qubits_not_controlled)
     for gate in gateList:
         self.add_a_gate_after_gate(gate, target)
     self.delete_gate(target)
-    possible_sites = self.get_all_swapdel_sites(debug=False)  # True)
+    possible_sites = self.get_all_swapdel_sites(debug=False, get_first=True)  # True)
     bookends_deleted = False
     while len(possible_sites) > 0:
-        for sites in possible_sites:
-            if sites["orig"] not in gateList:
-                bookends_deleted = True
-                self.apply_swapdel_ops(sites)
-        possible_sites = self.get_all_swapdel_sites(debug=False)  # True)
-    #print("broadcasts done ", bookends_deleted)
-    #print(self.build_circuit()[0])
+        sites = possible_sites.pop(0)
+        if not sites["orig"].get_node_type().is_gateset() and sites["orig"] not in gateList:
+            bookends_deleted = True
+            self.apply_swapdel_ops(sites)
+            possible_sites = self.get_all_swapdel_sites(debug=False, get_first=True)  # True)
     self.slice_edge_collection.update_all_mappings()
     return bookends_deleted
     
@@ -351,11 +350,15 @@ def partial_merge_nodesets(self, target):
 def optimizer_pass(self, debug=False):
     optimization_possible = True
     counter = 0    
-    c, _ = self.build_circuit(breakdown="vvv")
+    # c, _ = self.build_circuit(breakdown="vvv")
     while optimization_possible:
+        # is_gateset = False
         resulting_merges = self.get_all_swapdel_sites(debug=False)
         for r in resulting_merges:
-            self.apply_swapdel_ops(r, debug=False)
+            if not r["orig"].get_node_type().is_gateset():
+                self.apply_swapdel_ops(r, debug=False)
+            # else:
+            #     is_gateset = True    
         while True:
             resulting_merges = self.get_all_mergable_gates(debug=debug)
             for r in resulting_merges:
@@ -371,8 +374,12 @@ def optimizer_pass(self, debug=False):
             self = delete_projected_gates(self, debug=False)
             break
         self.prune_null_slices()
-        counter += 1  
-        status1 = len(self.get_all_swapdel_sites()) > 0
+        counter += 1
+        status1, all_1_sites = False, self.get_all_swapdel_sites()
+        for r in all_1_sites:
+            if not r["orig"].get_node_type().is_gateset():
+                status1 = True
+        # status1 = (not is_gateset) and len() > 0
         status2 = len(self.get_all_mergable_gates()) > 0
         status3 = len(self.get_all_mergeswap_gates()) > 0
         optimization_possible = status1 or status2 or status3 
@@ -389,6 +396,7 @@ def optimizer_pass(self, debug=False):
         if len(partial_merges) == 0:
             break
     self.slice_edge_collection.update_all_mappings()
+    # print(self.build_circuit()[0])
     return True
 
 

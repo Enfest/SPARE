@@ -1,6 +1,6 @@
 {
     "qubits": 36,
-    "slices_len": 34,
+    "slices_len": 36,
     "slices": {
         "0": {
             "qubits": 36,
@@ -1505,6 +1505,162 @@
             "node_1": "",
             "node_2": "",
             "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": {
+                "qubits": [
+                    6,
+                    26,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": {
+                "qubits": [
+                    6,
+                    26,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_15": "",
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": "",
+            "node_26": {
+                "qubits": [
+                    6,
+                    26,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_27": "",
+            "node_28": "",
+            "node_29": "",
+            "node_30": "",
+            "node_31": "",
+            "node_32": "",
+            "node_33": "",
+            "node_34": "",
+            "node_35": ""
+        },
+        "8": {
+            "qubits": 36,
+            "node_0": "",
+            "node_1": "",
+            "node_2": "",
+            "node_3": "",
             "node_4": {
                 "qubits": [
                     4,
@@ -1772,7 +1928,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "8": {
+        "9": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -1819,7 +1975,46 @@
                 "sink": null
             },
             "node_5": "",
-            "node_6": "",
+            "node_6": {
+                "qubits": [
+                    6,
+                    26,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
             "node_7": "",
             "node_8": "",
             "node_9": "",
@@ -1866,7 +2061,46 @@
             },
             "node_12": "",
             "node_13": "",
-            "node_14": "",
+            "node_14": {
+                "qubits": [
+                    6,
+                    26,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
             "node_15": "",
             "node_16": "",
             "node_17": "",
@@ -1878,7 +2112,46 @@
             "node_23": "",
             "node_24": "",
             "node_25": "",
-            "node_26": "",
+            "node_26": {
+                "qubits": [
+                    6,
+                    26,
+                    14
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
             "node_27": {
                 "qubits": [
                     4,
@@ -1928,7 +2201,163 @@
             "node_34": "",
             "node_35": ""
         },
-        "9": {
+        "10": {
+            "qubits": 36,
+            "node_0": "",
+            "node_1": {
+                "qubits": [
+                    6,
+                    27,
+                    1
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_2": "",
+            "node_3": "",
+            "node_4": "",
+            "node_5": "",
+            "node_6": {
+                "qubits": [
+                    6,
+                    27,
+                    1
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_7": "",
+            "node_8": "",
+            "node_9": "",
+            "node_10": "",
+            "node_11": "",
+            "node_12": "",
+            "node_13": "",
+            "node_14": "",
+            "node_15": "",
+            "node_16": "",
+            "node_17": "",
+            "node_18": "",
+            "node_19": "",
+            "node_20": "",
+            "node_21": "",
+            "node_22": "",
+            "node_23": "",
+            "node_24": "",
+            "node_25": "",
+            "node_26": "",
+            "node_27": {
+                "qubits": [
+                    6,
+                    27,
+                    1
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
+            "node_28": "",
+            "node_29": "",
+            "node_30": "",
+            "node_31": "",
+            "node_32": "",
+            "node_33": "",
+            "node_34": "",
+            "node_35": ""
+        },
+        "11": {
             "qubits": 36,
             "node_0": "",
             "node_1": {
@@ -2318,10 +2747,49 @@
             "node_34": "",
             "node_35": ""
         },
-        "10": {
+        "12": {
             "qubits": 36,
             "node_0": "",
-            "node_1": "",
+            "node_1": {
+                "qubits": [
+                    6,
+                    27,
+                    1
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
             "node_2": "",
             "node_3": "",
             "node_4": {
@@ -2365,7 +2833,46 @@
                 "sink": null
             },
             "node_5": "",
-            "node_6": "",
+            "node_6": {
+                "qubits": [
+                    6,
+                    27,
+                    1
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
             "node_7": "",
             "node_8": "",
             "node_9": "",
@@ -2425,7 +2932,46 @@
             "node_24": "",
             "node_25": "",
             "node_26": "",
-            "node_27": "",
+            "node_27": {
+                "qubits": [
+                    6,
+                    27,
+                    1
+                ],
+                "controls": [
+                    1,
+                    1
+                ],
+                "matrix": {
+                    "real": [
+                        [
+                            0.0,
+                            1.0
+                        ],
+                        [
+                            1.0,
+                            0.0
+                        ]
+                    ],
+                    "imaginary": [
+                        [
+                            0.0,
+                            0.0
+                        ],
+                        [
+                            0.0,
+                            0.0
+                        ]
+                    ]
+                },
+                "status_rule_3": [
+                    null,
+                    null
+                ],
+                "ancilla": false,
+                "root": false,
+                "sink": null
+            },
             "node_28": {
                 "qubits": [
                     4,
@@ -2474,7 +3020,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "11": {
+        "13": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -2981,7 +3527,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "12": {
+        "14": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -3137,7 +3683,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "13": {
+        "15": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -3527,7 +4073,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "14": {
+        "16": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -3872,7 +4418,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "15": {
+        "17": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -4055,7 +4601,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "16": {
+        "18": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -4355,7 +4901,7 @@
             },
             "node_35": ""
         },
-        "17": {
+        "19": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -4610,7 +5156,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "18": {
+        "20": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -4910,7 +5456,7 @@
                 "sink": null
             }
         },
-        "19": {
+        "21": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -5066,7 +5612,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "20": {
+        "22": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -5177,7 +5723,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "21": {
+        "23": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -5360,7 +5906,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "22": {
+        "24": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -5543,7 +6089,7 @@
                 "sink": null
             }
         },
-        "23": {
+        "25": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -5726,7 +6272,7 @@
                 "sink": null
             }
         },
-        "24": {
+        "26": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -5909,7 +6455,7 @@
                 "sink": null
             }
         },
-        "25": {
+        "27": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -6092,7 +6638,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "26": {
+        "28": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -6248,7 +6794,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "27": {
+        "29": {
             "qubits": 36,
             "node_0": {
                 "qubits": [
@@ -6521,7 +7067,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "28": {
+        "30": {
             "qubits": 36,
             "node_0": {
                 "qubits": [
@@ -6794,7 +7340,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "29": {
+        "31": {
             "qubits": 36,
             "node_0": {
                 "qubits": [
@@ -7067,7 +7613,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "30": {
+        "32": {
             "qubits": 36,
             "node_0": {
                 "qubits": [
@@ -7295,7 +7841,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "31": {
+        "33": {
             "qubits": 36,
             "node_0": "",
             "node_1": "",
@@ -7406,7 +7952,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "32": {
+        "34": {
             "qubits": 36,
             "node_0": {
                 "qubits": [
@@ -7641,7 +8187,7 @@
             "node_34": "",
             "node_35": ""
         },
-        "33": {
+        "35": {
             "qubits": 36,
             "node_0": {
                 "qubits": [
@@ -8150,7 +8696,7 @@
         }
     },
     "slice_collection": {
-        "edges_num": 33,
+        "edges_num": 35,
         "0": {
             "qubits": 36,
             "status_0": "EdgeType.Basis01",
@@ -8453,7 +8999,7 @@
             "status_24": "EdgeType.Basis01",
             "status_25": "EdgeType.Basis01",
             "status_26": "EdgeType.Basis01",
-            "status_27": "EdgeType.Basis01",
+            "status_27": "EdgeType.Basis0",
             "status_28": "EdgeType.Basis0",
             "status_29": "EdgeType.Basis0",
             "status_30": "EdgeType.Basis0",
@@ -8532,7 +9078,7 @@
             "status_25": "EdgeType.Basis01",
             "status_26": "EdgeType.Basis01",
             "status_27": "EdgeType.Basis01",
-            "status_28": "EdgeType.Basis01",
+            "status_28": "EdgeType.Basis0",
             "status_29": "EdgeType.Basis0",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
@@ -8571,7 +9117,7 @@
             "status_25": "EdgeType.Basis01",
             "status_26": "EdgeType.Basis01",
             "status_27": "EdgeType.Basis01",
-            "status_28": "EdgeType.Basis01",
+            "status_28": "EdgeType.Basis0",
             "status_29": "EdgeType.Basis0",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
@@ -8608,10 +9154,10 @@
             "status_23": "EdgeType.Basis01",
             "status_24": "EdgeType.Basis01",
             "status_25": "EdgeType.Basis01",
-            "status_26": "EdgeType.Basis0",
+            "status_26": "EdgeType.Basis01",
             "status_27": "EdgeType.Basis01",
             "status_28": "EdgeType.Basis01",
-            "status_29": "EdgeType.Basis01",
+            "status_29": "EdgeType.Basis0",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
             "status_32": "EdgeType.Basis0",
@@ -8647,10 +9193,10 @@
             "status_23": "EdgeType.Basis01",
             "status_24": "EdgeType.Basis01",
             "status_25": "EdgeType.Basis01",
-            "status_26": "EdgeType.Basis0",
+            "status_26": "EdgeType.Basis01",
             "status_27": "EdgeType.Basis01",
             "status_28": "EdgeType.Basis01",
-            "status_29": "EdgeType.Basis01",
+            "status_29": "EdgeType.Basis0",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
             "status_32": "EdgeType.Basis0",
@@ -8687,7 +9233,7 @@
             "status_24": "EdgeType.Basis01",
             "status_25": "EdgeType.Basis01",
             "status_26": "EdgeType.Basis0",
-            "status_27": "EdgeType.Basis0",
+            "status_27": "EdgeType.Basis01",
             "status_28": "EdgeType.Basis01",
             "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
@@ -8726,7 +9272,7 @@
             "status_24": "EdgeType.Basis01",
             "status_25": "EdgeType.Basis01",
             "status_26": "EdgeType.Basis0",
-            "status_27": "EdgeType.Basis0",
+            "status_27": "EdgeType.Basis01",
             "status_28": "EdgeType.Basis01",
             "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
@@ -8770,7 +9316,7 @@
             "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
-            "status_32": "EdgeType.Basis01",
+            "status_32": "EdgeType.Basis0",
             "status_33": "EdgeType.Basis0",
             "status_34": "EdgeType.Basis0",
             "status_35": "EdgeType.Basis0"
@@ -8809,9 +9355,9 @@
             "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
-            "status_32": "EdgeType.Basis01",
+            "status_32": "EdgeType.Basis0",
             "status_33": "EdgeType.Basis0",
-            "status_34": "EdgeType.Basis01",
+            "status_34": "EdgeType.Basis0",
             "status_35": "EdgeType.Basis0"
         },
         "17": {
@@ -8844,13 +9390,13 @@
             "status_25": "EdgeType.Basis01",
             "status_26": "EdgeType.Basis0",
             "status_27": "EdgeType.Basis0",
-            "status_28": "EdgeType.Basis0",
+            "status_28": "EdgeType.Basis01",
             "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
             "status_32": "EdgeType.Basis01",
-            "status_33": "EdgeType.Basis01",
-            "status_34": "EdgeType.Basis01",
+            "status_33": "EdgeType.Basis0",
+            "status_34": "EdgeType.Basis0",
             "status_35": "EdgeType.Basis0"
         },
         "18": {
@@ -8883,14 +9429,14 @@
             "status_25": "EdgeType.Basis01",
             "status_26": "EdgeType.Basis0",
             "status_27": "EdgeType.Basis0",
-            "status_28": "EdgeType.Basis0",
+            "status_28": "EdgeType.Basis01",
             "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
-            "status_32": "EdgeType.Basis0",
-            "status_33": "EdgeType.Basis01",
+            "status_32": "EdgeType.Basis01",
+            "status_33": "EdgeType.Basis0",
             "status_34": "EdgeType.Basis01",
-            "status_35": "EdgeType.Basis01"
+            "status_35": "EdgeType.Basis0"
         },
         "19": {
             "qubits": 36,
@@ -8926,10 +9472,10 @@
             "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
-            "status_32": "EdgeType.Basis0",
+            "status_32": "EdgeType.Basis01",
             "status_33": "EdgeType.Basis01",
             "status_34": "EdgeType.Basis01",
-            "status_35": "EdgeType.Basis01"
+            "status_35": "EdgeType.Basis0"
         },
         "20": {
             "qubits": 36,
@@ -9001,7 +9547,7 @@
             "status_26": "EdgeType.Basis0",
             "status_27": "EdgeType.Basis0",
             "status_28": "EdgeType.Basis0",
-            "status_29": "EdgeType.Basis0",
+            "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
             "status_32": "EdgeType.Basis0",
@@ -9040,11 +9586,11 @@
             "status_26": "EdgeType.Basis0",
             "status_27": "EdgeType.Basis0",
             "status_28": "EdgeType.Basis0",
-            "status_29": "EdgeType.Basis0",
+            "status_29": "EdgeType.Basis01",
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
             "status_32": "EdgeType.Basis0",
-            "status_33": "EdgeType.Basis0",
+            "status_33": "EdgeType.Basis01",
             "status_34": "EdgeType.Basis01",
             "status_35": "EdgeType.Basis01"
         },
@@ -9083,8 +9629,8 @@
             "status_30": "EdgeType.Basis0",
             "status_31": "EdgeType.Basis0",
             "status_32": "EdgeType.Basis0",
-            "status_33": "EdgeType.Basis0",
-            "status_34": "EdgeType.Basis0",
+            "status_33": "EdgeType.Basis01",
+            "status_34": "EdgeType.Basis01",
             "status_35": "EdgeType.Basis01"
         },
         "24": {
@@ -9123,8 +9669,8 @@
             "status_31": "EdgeType.Basis0",
             "status_32": "EdgeType.Basis0",
             "status_33": "EdgeType.Basis0",
-            "status_34": "EdgeType.Basis0",
-            "status_35": "EdgeType.Basis0"
+            "status_34": "EdgeType.Basis01",
+            "status_35": "EdgeType.Basis01"
         },
         "25": {
             "qubits": 36,
@@ -9163,7 +9709,7 @@
             "status_32": "EdgeType.Basis0",
             "status_33": "EdgeType.Basis0",
             "status_34": "EdgeType.Basis0",
-            "status_35": "EdgeType.Basis0"
+            "status_35": "EdgeType.Basis01"
         },
         "26": {
             "qubits": 36,
@@ -9400,6 +9946,84 @@
             "status_35": "EdgeType.Basis0"
         },
         "32": {
+            "qubits": 36,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis01",
+            "status_13": "EdgeType.Basis01",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis01",
+            "status_18": "EdgeType.Basis01",
+            "status_19": "EdgeType.Basis01",
+            "status_20": "EdgeType.Basis01",
+            "status_21": "EdgeType.Basis01",
+            "status_22": "EdgeType.Basis01",
+            "status_23": "EdgeType.Basis01",
+            "status_24": "EdgeType.Basis01",
+            "status_25": "EdgeType.Basis01",
+            "status_26": "EdgeType.Basis0",
+            "status_27": "EdgeType.Basis0",
+            "status_28": "EdgeType.Basis0",
+            "status_29": "EdgeType.Basis0",
+            "status_30": "EdgeType.Basis0",
+            "status_31": "EdgeType.Basis0",
+            "status_32": "EdgeType.Basis0",
+            "status_33": "EdgeType.Basis0",
+            "status_34": "EdgeType.Basis0",
+            "status_35": "EdgeType.Basis0"
+        },
+        "33": {
+            "qubits": 36,
+            "status_0": "EdgeType.Basis01",
+            "status_1": "EdgeType.Basis01",
+            "status_2": "EdgeType.Basis01",
+            "status_3": "EdgeType.Basis01",
+            "status_4": "EdgeType.Basis01",
+            "status_5": "EdgeType.Basis01",
+            "status_6": "EdgeType.Basis01",
+            "status_7": "EdgeType.Basis01",
+            "status_8": "EdgeType.Basis01",
+            "status_9": "EdgeType.Basis01",
+            "status_10": "EdgeType.Basis01",
+            "status_11": "EdgeType.Basis01",
+            "status_12": "EdgeType.Basis01",
+            "status_13": "EdgeType.Basis01",
+            "status_14": "EdgeType.Basis01",
+            "status_15": "EdgeType.Basis01",
+            "status_16": "EdgeType.Basis01",
+            "status_17": "EdgeType.Basis01",
+            "status_18": "EdgeType.Basis01",
+            "status_19": "EdgeType.Basis01",
+            "status_20": "EdgeType.Basis01",
+            "status_21": "EdgeType.Basis01",
+            "status_22": "EdgeType.Basis01",
+            "status_23": "EdgeType.Basis01",
+            "status_24": "EdgeType.Basis01",
+            "status_25": "EdgeType.Basis01",
+            "status_26": "EdgeType.Basis0",
+            "status_27": "EdgeType.Basis0",
+            "status_28": "EdgeType.Basis0",
+            "status_29": "EdgeType.Basis0",
+            "status_30": "EdgeType.Basis0",
+            "status_31": "EdgeType.Basis0",
+            "status_32": "EdgeType.Basis0",
+            "status_33": "EdgeType.Basis0",
+            "status_34": "EdgeType.Basis0",
+            "status_35": "EdgeType.Basis0"
+        },
+        "34": {
             "qubits": 36,
             "status_0": "EdgeType.Basis01",
             "status_1": "EdgeType.Basis01",

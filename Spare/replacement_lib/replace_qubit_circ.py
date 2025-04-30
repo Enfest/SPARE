@@ -244,7 +244,7 @@ def is_zgate(matrix, theta_tolerance=1e-12):
     return np.allclose(matrix, np.asarray([[-1, 0], [0, 1]])) or np.allclose(matrix, np.asarray([[1, 0], [0, -1]]))
 
 # Helper function to convert a Cirq gate to a Qiskit gate
-def _convert_cirq_gate_to_qiskit(cirq_gate):
+def _convert_cirq_gate_to_qiskit(cirq_gate, lvl=3):
     """Convert Cirq gate to Qiskit gate."""
     # print(cirq_gate)
     if cirq.unitary(cirq_gate).shape[0] == 2:
@@ -267,18 +267,17 @@ def _convert_cirq_gate_to_qiskit(cirq_gate):
             return UGate(cirq.unitary(cirq_gate))
     elif cirq.unitary(cirq_gate).shape[0] == 8:
         # You can add more gate conversions as needed
-        # print(cirq_gate)
         if np.allclose(cirq.unitary(cirq_gate), cirq.unitary(cirq.CCX)):
             return Gate(name="ccx", num_qubits=3, params=[])
         elif is_zgate(cirq.unitary(cirq_gate)[-2:, -2:]):
             qc = QuantumCircuit(3)  # Assume it's a 1-qubit UGate, adjust for multi-qubit
             qc.append(CCZGate(), [0, 1, 2]) # Do a CCX gate if we do not want improvements 
-            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=3)
+            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=lvl)
             return [(x.operation, x.qubits) for x in check.data]
         elif is_rccx_gate(cirq.unitary(cirq_gate)[-2:, -2:]):
             qc = QuantumCircuit(3)  # Assume it's a 1-qubit UGate, adjust for multi-qubit
             qc.append(RCCXGate(), [0, 1, 2]) # Do a CCX gate if we do not want improvements 
-            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=3)
+            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=lvl)
             return [(x.operation, x.qubits) for x in check.data]
             return UGate(cirq.unitary(cirq_gate))
         elif is_ry_gate(cirq.unitary(cirq_gate)[-2:, -2:])[0]:
@@ -293,19 +292,19 @@ def _convert_cirq_gate_to_qiskit(cirq_gate):
             qc.append(g2, [1, 2])
             qc.append(CXGate(), [0, 1])
             qc.append(g3, [0, 2])
-            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=3)
+            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=lvl)
             return [(x.operation, x.qubits) for x in check.data]
         elif is_rx_gate(cirq.unitary(cirq_gate)[-2:, -2:])[0]:
             gate = RXGate(theta=is_rx_gate(cirq.unitary(cirq_gate)[-2:, -2:])[1]).control(num_ctrl_qubits=2)
             qc = QuantumCircuit(3)  # Assume it's a 1-qubit UGate, adjust for multi-qubit
             qc.append(gate, [0, 1, 2])
-            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=3)
+            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=lvl)
             return UGate(cirq.unitary(cirq_gate))
         else:
             qc = QuantumCircuit(3)  # Assume it's a 1-qubit UGate, adjust for multi-qubit
             gate = UGate(cirq.unitary(cirq_gate)[-2:, -2:]).control(num_ctrl_qubits=2)
             qc.append(gate, [0, 1, 2])
-            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=3)
+            check = transpile(qc, basis_gates=['cx', 'h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=lvl)
             return UGate(cirq.unitary(cirq_gate))
     else:
         raise ValueError(f"Unsupported Cirq gate type: {type(cirq_gate)}")
@@ -313,7 +312,7 @@ def _convert_cirq_gate_to_qiskit(cirq_gate):
 # Function to decompose Qiskit circuit to Clifford+T
 def decompose_to_clifford_t(qiskit_circuit):
     """Decompose the Qiskit circuit to Clifford+T gateset.""" # 
-    transpiled = transpile(qiskit_circuit, basis_gates=['h', 't', 'tdag', 'x', 'y', 'x', 's', 'sdg', 'u3', 'cx'], optimization_level=0)
+    transpiled = transpile(qiskit_circuit, basis_gates=['h', 't', 'tdag', 'cx', 'x', 'y', 'x', 's', 'sdg', 'u3'], optimization_level=0)
     return transpiled
 
 # Function to convert Qiskit circuit back to Cirq
