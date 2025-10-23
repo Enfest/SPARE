@@ -2,9 +2,6 @@ import cirq
 import math
 import numpy as np
 from itertools import product
-from src import toffoli # import *
-from src import qutrit_decompositions # import *
-from src import controlled_gate_impl # ternary_gate import *
 from rewriter.simple_circuit_rewrites import get_circuit_unitaries
 # , get_random_state, apply_unitaries_to_circuit
 

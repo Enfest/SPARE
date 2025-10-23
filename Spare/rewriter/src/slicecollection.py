@@ -8,7 +8,6 @@ from src.toffoli import *
 import networkx as nx
 import cirq
 from rewriter.utils.graph_utils import *
-import collections
 
 def add_gate_with_interface(status_binary, slice):
     assert len(status_binary) == len(slice.get_qubits())

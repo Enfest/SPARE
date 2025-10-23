@@ -29,7 +29,7 @@ errors=()
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 export RIPL_HOME=$basedir
-rewriter=$(pwd)/Spare/rewriter
+rewriter=$(pwd)/rewriter
 
 
 mkdir -p "$DOT_PATH"
@@ -47,7 +47,7 @@ for b in ${!BENCHMARKS[@]}; do
 	json_path=$(pwd)/"OUTPUT_JSON"/"TOOL_RESULTS"
 	echo "Testing $bench..."
 	echo $rewriter/compile_rewrite_graphs.py
-	python $rewriter/compile_rewrite_graphs.py --test-name=$dotpath${bench}_graph --compile-mode="optimized_qubit"\
+	/opt/anaconda3/envs/spare_env/bin/python -c "import sys; sys.path.insert(0, '$basedir'); import runpy; runpy.run_module('spare.rewriter.compile_rewrite_graphs', run_name='__main__')" --test-name=$dotpath${bench}_graph --compile-mode="optimized_qubit"\
 		--runs=$1 --json-name=$json_path/output_$bench.json > $rewritelogpath
 	rm -r $(pwd)/"temp_files"/	
 done

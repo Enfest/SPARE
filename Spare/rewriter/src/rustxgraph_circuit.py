@@ -6,8 +6,8 @@ from rewriter.utils.check_subspace_equality import *
 from rewriter.src.nodeset import LabelledNode
 from rewriter.src.node_directory import NodeDirectory
 from rewriter.utils.graph_utils import *
-from Spare.src.cirq_depth_counter import depth_counter
-from Spare.replacement_lib.replace_qubit_circ import replace_qubit_circuit
+from src.cirq_depth_counter import depth_counter
+from replacement_lib.replace_qubit_circ import replace_qubit_circuit
 
 
 class GraphInfo:

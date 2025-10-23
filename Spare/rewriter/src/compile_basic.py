@@ -1,5 +1,4 @@
-from rewriter.src.slicecollection import GateSliceCollection
-from utils.check_subspace_equality import *
+from rewriter.utils.check_subspace_equality import *
 from rewriter.simple_circuit_rewrites import *
 from rewriter.utils.node_gate_types import *
 from rewriter.utils.edge_types import EdgeType

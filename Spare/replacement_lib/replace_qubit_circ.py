@@ -2,7 +2,6 @@ import cirq
 import numpy as np
 from cmath import exp
 from math import pi
-import math
 # import cirq.setup
 from qiskit import QuantumCircuit
 from qiskit.circuit.library import UnitaryGate as UGate

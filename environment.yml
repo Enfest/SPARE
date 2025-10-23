@@ -1,0 +1,26 @@
+name: spare_env
+channels:
+  - conda-forge  # Excellent for scientific packages and system libraries
+  - defaults
+dependencies:
+  # 1. Base Python (FROM python:3.8.10)
+  - python=3.8.10
+
+  # 2. System and Build Dependencies (from apt-get installs)
+  # Conda often replaces these system-level dependencies with its own packages.
+  - cmake
+  - ninja      # Replaces ninja-build
+  - libopenblas  # Provides OpenBLAS/LAPACK capabilities
+  - bzip2
+  - curl
+  # Note: build-essential and python3-dev are usually handled automatically by Conda.
+
+  # 3. Pip and Requirements
+  - pip
+  - pip:
+      # Option A: Reference your existing requirements.txt file
+      - -r requirements.txt
+      
+      # OR Option B: List the packages individually if you prefer
+      # - package-name==version
+      # - another-package

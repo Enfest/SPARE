@@ -19,6 +19,9 @@ class RewriteEngine(GateSliceCollection):
             "slice_collection": self.slice_edge_collection.serialize()
         }
         result  = json.dumps(data, indent=4)
+        # check if directory exists
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
         with open(file_path, "w") as json_file:
             json_file.write(result)
         return

@@ -5,8 +5,8 @@ import pydot
 import json
 import os
 import argparse
-from spare.src.toffoli import *
-from utils.check_subspace_equality import *
+from src.toffoli import *
+from rewriter.utils.check_subspace_equality import *
 import rewriter.src.rustxgraph_circuit as rx_graph
 from rewriter.simple_circuit_rewrites import *
 from rewriter.src.rustxgraph_circuit import post_rewrite_compile
@@ -15,8 +15,8 @@ from rewriter.src.compile import RewriteEngine
 from rewriter.src.rewrites import apply_rule_2
 from rewriter.src.compile_basic import *
 from rewriter.utils.passmanage import rewritePassesManager, rewritePassManage, passPair
-import Spare.ancilla_convertor.circuit_convertor
-from Spare.src.cirq_depth_counter import toffoli_estimator, depth_estimater
+from src.cirq_depth_counter import toffoli_estimator, depth_estimater
+from ancilla_convertor.circuit_convertor import unroll_multicontrolled_gates
 
 
 class CLIR(rx_graph.GraphInfo):
